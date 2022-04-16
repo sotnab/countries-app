@@ -1,0 +1,31 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --text-color: $light-text;
+   --input-color: $light-input;
+   --bg-color: $light-bg;
+
+   @media (prefers-color-scheme: dark) {
+      --text-color: $white;
+      --input-color: $dark-elements;
+      --bg-color: $dark-bg;
+   }
+}
+
+[color-scheme='dark'] {
+   --text-color: $white;
+   --input-color: $dark-elements;
+   --bg-color: $dark-bg;
+}
+
+html,
+body {
+   font-family: $font-family;
+   font-size: $home-font-size;
+   font-weight: $font-normal;
+   color: var(--text-color);
+}
