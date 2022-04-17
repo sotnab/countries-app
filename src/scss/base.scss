@@ -4,28 +4,28 @@
    box-sizing: border-box;
 }
 
-:root {
-   --text-color: $light-text;
-   --input-color: $light-input;
-   --bg-color: $light-bg;
-
-   @media (prefers-color-scheme: dark) {
-      --text-color: $white;
-      --input-color: $dark-elements;
-      --bg-color: $dark-bg;
-   }
-}
-
-[color-scheme='dark'] {
-   --text-color: $white;
-   --input-color: $dark-elements;
-   --bg-color: $dark-bg;
-}
-
-html,
-body {
+.App {
+   display: grid;
+   grid-template-rows: auto 1fr;
+   min-height: 100vh;
    font-family: $font-family;
    font-size: $home-font-size;
    font-weight: $font-normal;
-   color: var(--text-color);
+   color: $light-text;
+
+   &--dark {
+      color: $white;
+   }
+}
+
+.wrapper {
+   max-width: 1200px;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+
+   @media (min-width: $breakpoint) {
+      padding-left: 16px;
+      padding-right: 16px;
+   }
 }

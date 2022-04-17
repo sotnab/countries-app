@@ -7,6 +7,14 @@ $font-light: 300;
 $font-normal: 600;
 $font-bold: 800;
 
+$border-radius: 6px;
+
+$shadow: 0 2px 10px 0 rgba(black, 0.1);
+
+$breakpoint: 700px;
+$l-breakpoint: 900px;
+$xl-breakpoint: 1100px;
+
 $white: hsl(0, 0%, 100%);
 $dark-elements: hsl(209, 23%, 22%);
 $dark-bg: hsl(207, 26%, 17%);
@@ -14,3 +22,11 @@ $dark-bg: hsl(207, 26%, 17%);
 $light-text: hsl(200, 15%, 8%);
 $light-input: hsl(0, 0%, 52%);
 $light-bg: hsl(0, 0%, 98%);
+
+@mixin clear-input {
+   background: transparent;
+   color: inherit;
+   font-family: inherit;
+   font-size: inherit;
+   border: none;
+}

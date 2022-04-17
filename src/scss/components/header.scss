@@ -1,0 +1,55 @@
+.header {
+   position: relative;
+   padding: 30px 16px;
+   background: $white;
+   box-shadow: $shadow;
+   z-index: 2;
+
+   @media (min-width: $breakpoint) {
+      padding: 24px 0;
+   }
+}
+
+.header__wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header__title {
+   font-size: 0.9rem;
+
+   @media (min-width: $breakpoint) {
+      font-size: 1.35rem;
+   }
+}
+
+.header__toggle-theme {
+   @include clear-input();
+   display: flex;
+   align-items: center;
+   gap: 8px;
+
+   @media (min-width: $breakpoint) {
+      cursor: pointer;
+   }
+}
+
+.header__name {
+   font-size: 0.78rem;
+   font-weight: $font-normal;
+
+   @media (min-width: $breakpoint) {
+      font-size: 0.9rem;
+   }
+}
+
+.App--dark {
+   .header {
+      background: $dark-elements;
+   }
+
+   .header__name {
+      font-weight: $font-light;
+   }
+}
