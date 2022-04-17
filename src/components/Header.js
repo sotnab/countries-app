@@ -14,7 +14,7 @@ const Header = () => {
             <button className="header__toggle-theme" onClick={toggle}>
                {theme === 'light' && <DarkModeOutlined fontSize="small" />}
                {theme === 'dark' && <DarkMode fontSize="small" />}
-               <div className="header__name">Dark Mode</div>
+               <span className="header__name">Dark Mode</span>
             </button>
          </div>
       </header>
