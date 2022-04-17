@@ -13,7 +13,7 @@ const Details = () => {
    const back = () => nav('/')
 
    useEffect(() => {
-      const foundItem = countries.find((item) => item.name === name)
+      const foundItem = countries.find((item) => item.alpha3Code === name)
       setItem(foundItem)
 
    }, [name, countries])

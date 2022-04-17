@@ -26,8 +26,9 @@ const Countries = () => {
                   className="countries__input countries__input--select"
                   value={filter}
                   onChange={(e) => setFilter(e.target.value)}
+                  aria-labelledby="select-label"
                >
-                  <option value="" disabled hidden>Filter by Region</option>
+                  <option id="select-label" value="" disabled hidden>Filter by Region</option>
                   <option value="Africa">Africa</option>
                   <option value="Americas">America</option>
                   <option value="Asia">Asia</option>

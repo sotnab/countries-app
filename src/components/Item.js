@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const Item = ({ item }) => {
    return (
-      <Link to={`/details/${item.name}`} className="countries__item" >
+      <Link to={`/details/${item.alpha3Code}`} className="countries__item" >
          <img src={item.flags.svg} alt={item.name + ' flag'} className="countries__img" />
          <div className="countries__info">
             <h2 className="countries__title">{item.name}</h2>
